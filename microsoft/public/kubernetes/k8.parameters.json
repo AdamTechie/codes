@@ -1,0 +1,102 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "aksClusterNetworkPlugin": {
+      "value": "azure"
+    },
+    "aksClusterNetworkPolicy": {
+      "value": "azure"
+    },
+    "aksClusterPodCidr": {
+      "value": "172.16.73.64/26"
+    },
+    "aksClusterServiceCidr": {
+      "value": "172.16.73.128/28"
+    },
+    "aksClusterDnsServiceIP": {
+      "value": "172.16.73.133"
+    },
+    "aksClusterDockerBridgeCidr": {
+      "value": "172.17.0.1/16"
+    },
+    "aksClusterKubernetesVersion": {
+      "value": "1.23.3"
+    },
+    "aksClusterAdminUsername": {
+      "value": "azureuser"
+    },
+    "aksClusterSshPublicKey": {
+      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDHm/lZmoCI4FqzlFJCIEpWrnfEIPG13tCO1g3SLz5jyptj28/txta9r3aqBPLwWEfy0pWxzQ24y2fuCCdAoYbf4LH7yBuQmPMnAaSa0V8pb0Vr82Ol/PLnl01WytIRYDyUa0/qHocxe0TnaV0W4WDex78oMIPwON/HPMjFLuMOJhX6vmX1U/82qxF6c9TUh0nHEP06Ljc08RpB4Sr2ZsUhdMTVjDOF4dxheMNrZz9s1IkgNYwnr3KRoZNzZb9soLMejy0CIUF7gI+h05tRkHhgxMl3I6B01DFSrfGd2eH5B42PJkLA9J0SP5lALL3k8gpOycr4hI1NdIAU0gV9OrRr adam@cc-65c1c1b4-5754c44547-f4m5t"
+    },
+    "aadProfileManaged": {
+      "value": true
+    },
+    "aadProfileEnableAzureRBAC": {
+      "value": true
+    },
+    "aadProfileAdminGroupObjectIDs": {
+      "value": [
+        "2d60e8f5-9789-48b1-ad9a-49a66e7be5ba"
+      ]
+    },
+    "nodePoolName": {
+      "value": "main"
+    },
+    "nodePoolVmSize": {
+      "value": "Standard_DS3_v2"
+    },
+    "nodePoolCount": {
+      "value": 5
+    },
+    "nodePoolMaxCount": {
+      "value": 10
+    },
+    "nodePoolMinCount": {
+      "value": 3
+    },
+
+    "logAnalyticsSku": {
+      "value": "PerGB2018"
+    },
+    "logAnalyticsRetentionInDays": {
+      "value": 60
+    },
+    "vmSize": {
+      "value": "Standard_F4s_v2"
+    },
+    "imagePublisher": {
+      "value": "Canonical"
+    },
+    "imageOffer": {
+      "value": "UbuntuServer"
+    },
+    "imageSku": {
+      "value": "18.04-LTS"
+    },
+    "authenticationType": {
+      "value": "password"
+    },
+    "vmAdminUsername": {
+      "value": "adam"
+    },
+    "vmAdminPasswordOrKey": {
+      "value": "adm1n@@Local"
+    },
+    "diskStorageAccounType": {
+      "value": "Premium_LRS"
+    },
+    "numDataDisks": {
+      "value": 1
+    },
+    "osDiskSize": {
+      "value": 50
+    },
+    "dataDiskSize": {
+      "value": 50
+    },
+    "dataDiskCaching": {
+      "value": "ReadWrite"
+    }
+  }
+}
